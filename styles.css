@@ -91,7 +91,7 @@ body {
 }
 
 .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(1, 0, 0, 0.1);
 }
 
 main {
@@ -114,6 +114,87 @@ section {
 .hero-content {
     max-width: 1200px;
     text-align: center;
+}
+
+.hero-content h2:first-child {
+    margin-bottom: 0rem;
+}
+
+.gene-selector {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.gene-dropdown {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: 0px;
+    border-radius: 1px;
+    background: rgba(0, 0, 0, 0);  
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 300px;
+    text-align: center;
+}
+
+.gene-dropdown:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 245, 160, 0.3);
+}
+
+.gene-dropdown option {
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.simulation-button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.simulation-button:hover {
+    transform: scale(1.05);
+    background: var(--accent-color);
+}
+
+.simulation-button:active {
+    transform: scale(0.98);
+}
+
+.download-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 50px;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+    background: var(--accent-color);
+}
+
+.download-button:active {
+    transform: scale(0.98);
 }
 
 h1, h2 {

@@ -1,0 +1,15 @@
+# Placeholder .h5ad file
+# This represents the simulation results in AnnData format
+# In a real implementation, this would contain actual single-cell data
+# with gene expression matrices, metadata, and annotations
+
+# File structure:
+# - X: gene expression matrix
+# - obs: cell metadata
+# - var: gene metadata
+# - uns: unstructured data
+# - obsm: multi-dimensional cell annotations
+# - varm: multi-dimensional gene annotations
+
+# This is a binary HDF5 file containing single-cell RNA-seq data
+# Generated from gene editing simulation

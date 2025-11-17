@@ -16,7 +16,7 @@
             <span>KLEON AI</span>
         </div>
         <div class="nav-links">
-            <a href="#home">Home</a>
+            <a href="index.html">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </div>
@@ -25,13 +25,18 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h2>Try out our virtual cells!</h2>
-                <section id="virtual-cells" class="hero">
-                    <h2><a href="rbc_virtualcell.html"> Red blood cells</a></h2>
-                    <h2><a href="skin_virtualcell.html"> Skin cells</a></h2>
-                    <h2><a href="liver_virtualcell.html"> Liver cells</a></h2>
-                </section>
-                <p class="subtitle"></p>
+                <h2>Select a gene to edit</h2>
+                <div class="gene-selector">
+                    <select id="gene-select" class="gene-dropdown">
+                        <option value="">Choose a gene...</option>
+                        <option value="HBB">HBB (Hemoglobin subunit beta)</option>
+                        <option value="HBA1">HBA1/HBA2 (Hemoglobin subunit alpha)</option>
+                        <option value="SLC4A1">SLC4A1 (Band 3 protein)</option>
+                        <option value="GYPA">GYPA (Glycophorin A)</option>
+                        <option value="SPTA1">SPTA1 (Spectrin alpha)</option>
+                    </select>
+                    <button id="run-simulation" class="simulation-button">Run Simulation</button>
+                </div>
             </div>
         </section>
 

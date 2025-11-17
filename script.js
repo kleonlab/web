@@ -170,4 +170,34 @@ const createParticle = () => {
     }, 5000);
 };
 
-setInterval(createParticle, 300); 
+setInterval(createParticle, 300);
+
+// Gene simulation functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const runBtn = document.getElementById('run-simulation');
+    const geneSelect = document.getElementById('gene-select');
+
+    if (runBtn && geneSelect) {
+        runBtn.addEventListener('click', () => {
+            const gene = geneSelect.value;
+
+            if (!gene) {
+                alert('Please choose a gene first.');
+                return;
+            }
+
+            // Navigate to simulation page and pass the gene as a query parameter
+            window.location.href = `simulation.html?gene=${encodeURIComponent(gene)}`;
+        });
+    }
+
+    // Code for the simulation page - display selected gene
+    const geneText = document.getElementById('selected-gene-text');
+    if (geneText) {
+        const params = new URLSearchParams(window.location.search);
+        const selectedGene = params.get('gene');
+        if (selectedGene) {
+            geneText.textContent = `Selected gene: ${selectedGene}`;
+        }
+    }
+}); 
